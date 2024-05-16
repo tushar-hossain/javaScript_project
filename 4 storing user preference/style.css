@@ -1,0 +1,50 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+.container {
+  padding: 1rem;
+}
+#changeFontSize {
+  margin: 0 1rem 1rem 0;
+  border: none;
+  border: 1px solid;
+  border-radius: 0.4rem;
+  font-size: 0.8rem;
+  padding: 0.3rem;
+}
+#changeFontSize:hover {
+  background-color: cornflowerblue;
+  border: none;
+}
+#changeBgSize {
+  border: none;
+  border: 1px solid black;
+  margin-left: 1rem;
+  border-radius: 0.4rem;
+  font-size: 0.8rem;
+  padding: 0.3rem;
+}
+#changeBgSize:hover {
+  background-color: cornflowerblue;
+  border: none;
+}
+main {
+  background-color: aqua;
+}
+#resetButtons {
+  border: none;
+  border: 1px solid;
+  margin-left: 1rem;
+  border-radius: 0.4rem;
+  font-size: 0.8rem;
+  padding: 0.3rem 0.8rem;
+}
+#resetButtons:hover {
+  background-color: cornflowerblue;
+  border: none;
+}
+p {
+  margin-bottom: 1rem;
+}
