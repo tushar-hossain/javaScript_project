@@ -7,6 +7,22 @@ const cardBody = document.querySelector(".card-body");
 const todoLists = document.querySelector("#lists");
 const messageElement = document.querySelector("#message");
 
+// delete todo
+const deleteTodo = (e) => {
+  let selectedTodo = e.target.parentElement.parentElement.parentElement;
+  todoLists.removeChild(selectedTodo);
+  showMessage("todo is deleted", "danger");
+  // const todoId = selectedTodo.id;
+
+  let todos = getTodosFromLocalStorage();
+  todos = todos.filter((todo) => {
+    if (todo.todoId != selectedTodo.id) {
+      return todo;
+    }
+  });
+  localStorage.setItem("mytodos", JSON.stringify(todos));
+};
+
 // showMessage
 const showMessage = (text, status) => {
   messageElement.textContent = text;
@@ -27,13 +43,6 @@ const createTodo = (todoId, todoValue) => {
   // delete todo listener
   const deleteButton = todoElement.querySelector("#deleteButton");
   deleteButton.addEventListener("click", deleteTodo);
-};
-
-// delete todo
-const deleteTodo = (e) => {
-  let selectedTodo = e.target.parentElement.parentElement.parentElement;
-  todoLists.removeChild(selectedTodo);
-  showMessage("todo is deleted", "danger");
 };
 
 // get Todos From LocalStorage
@@ -57,5 +66,13 @@ const addTodo = (e) => {
   todoInput.value = "";
 };
 
+// loadTodos
+
+const loadTodos = () => {
+  const todos = getTodosFromLocalStorage();
+  todos.map((todo) => createTodo(todo.todoId, todo.todoValue));
+};
+
 // add Event Listener
 todoForm.addEventListener("submit", addTodo);
+window.addEventListener("DOMContentLoaded", loadTodos);
