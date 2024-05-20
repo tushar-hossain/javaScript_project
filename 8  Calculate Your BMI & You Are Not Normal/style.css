@@ -1,0 +1,75 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.card {
+  width: 15rem;
+  height: 22rem;
+  background-color: #111;
+  border-radius: 0.6rem;
+  text-align: center;
+  padding: 1rem;
+  color: white;
+}
+.weight-title {
+  background-color: #333;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  transition: all 0.6s;
+}
+.weight-title:hover {
+  background-color: #666;
+}
+.height-title {
+  background-color: #333;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  transition: all 0.6s;
+}
+.height-title:hover {
+  background-color: #666;
+}
+.buttons {
+  margin-bottom: 1rem;
+}
+#calculateButton {
+  padding: 0.5rem;
+  border-radius: 0.6rem;
+  cursor: pointer;
+}
+#calculateButton:hover {
+  background-color: #22bb33;
+  color: white;
+}
+#restButton {
+  padding: 0.5rem;
+  border-radius: 0.6rem;
+  cursor: pointer;
+}
+#restButton:hover {
+  background-color: #f0ad4e;
+  color: white;
+}
+.bmiMessage {
+  background-color: #333;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  transition: all 0.6s;
+}
+.bmiMessage:hover {
+  background-color: #666;
+}
+input {
+  margin-top: 0.3rem;
+  border: none;
+  outline: none;
+  padding: 0.3rem;
+  border-radius: 0.6rem;
+}
