@@ -1,0 +1,40 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.clock-container {
+  width: 20rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  padding: 3rem 6rem 3rem 6rem;
+  border-radius: 0.2rem;
+  text-align: center;
+  box-shadow: 0 0 0.1rem black;
+}
+.clock-container:hover {
+  box-shadow: 0 0 0.2rem black;
+}
+span {
+  margin: 0 0.5rem;
+  font-size: small;
+  margin: 1rem;
+}
+p {
+  background-color: #f3ababc4;
+  padding: 1rem 1rem;
+  border-radius: 0.3rem;
+  font-size: 1.5rem;
+}
+.progress-bar {
+  height: 5px;
+  background-color: chocolate;
+}
