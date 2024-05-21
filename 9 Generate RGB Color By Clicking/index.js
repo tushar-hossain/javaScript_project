@@ -1,3 +1,4 @@
+// Finding elements
 let bgColor = document.querySelector("body");
 let changeColorBtn = document.getElementById("changebtn");
 
